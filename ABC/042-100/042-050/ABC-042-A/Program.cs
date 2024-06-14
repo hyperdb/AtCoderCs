@@ -8,10 +8,8 @@ class Program
 
         Array.Sort(param);
 
-        int sum = param.Sum();
-
         string result = "NO";
-        if(sum == 17 && param[0] == 5 && param[1] == 5)
+        if(param.SequenceEqual(new int[] { 5, 5, 7 }))
         {
             result = "YES";
         }
